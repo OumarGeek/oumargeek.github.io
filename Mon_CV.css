@@ -1,0 +1,419 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font: 1rem 'Fira Sans';
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    height: 200px;
+    background: url(Images/img_circuit.jpg) center no-repeat;
+    background-size: 100%;
+    width: 100%;
+}
+
+.headdiv{
+    text-align: center;
+}
+
+header h1{
+    font-style: oblique;
+    font-size: 43px;
+    margin-top: 60px;
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+header h1::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    top: 100%;
+    left: 50%;
+    border-radius: 30px;
+    background: -webkit-linear-gradient(left blue, yellow, red);
+    background: -moz-linear-gradient(right, blue, yellow, red);
+    background: -o-linear-gradient(right, blue, yellow, red);
+    background: linear-gradient(to right, blue, yellow, red);
+    transition: all 400ms ease;
+}
+
+header h1:hover::after{
+    width: 100%;
+    left: 0%;
+}
+
+h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    padding: 10px;
+    margin: 15px 40px;
+}
+
+h2{
+    font-size: 23px;    
+}
+
+h3{
+    font-size: 18px;
+}
+
+footer{
+    height: 100px;
+    background-color: #AAA;
+    border-top: 3px solid rgb(197, 197, 197);
+}
+
+footer p{
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    padding-top: 25px;
+}
+
+p{
+    font-size: 16px;
+}
+
+nav{
+    width: 100%;
+    background-color: #424556;
+}
+
+.table{
+    display: table;
+    margin: 0px auto;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li{
+    list-style-type: none;
+    float: left;
+}
+
+nav ul li a{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px 10px;
+    color: #FFF;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    top: 0%;
+    left: 50%;
+    position: absolute;
+    background: red;
+    transition: all 400ms ease;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+    left: 0%;
+}
+
+.menu-acc a::after{
+    background-color: lawngreen;
+}
+
+.menu-exp a::after{
+    background-color: yellow;
+}
+
+.menu-hob a::after{
+    background-color: blue;
+}
+
+.menu-con a::after{
+    background-color: red;
+}
+
+.menu-acc a:hover{
+    background-color: rgba(0, 255, 0, 0.15);
+}
+
+.menu-exp a:hover{
+    background-color: rgba(255, 255, 0, 0.15);
+}
+
+.menu-hob a:hover{
+    background-color: rgba(0, 0, 255, 0.15);
+}
+
+.menu-con a:hover{
+    background-color: rgba(255, 0, 0, 0.15);
+}
+
+.présentation{
+    background-color: rgba(0, 255, 0, 0.15);
+    border-top: 5px solid lawngreen;
+}
+
+.parcours{
+    background-color: rgba(255, 255, 0, 0.15);
+    border-top: 5px solid yellow;
+}
+
+.compétences{
+    background-color: rgba(0, 0, 255, 0.15);
+    border-top: 5px solid blue;
+}
+
+.recommandations{
+    background-color: rgba(255, 0, 0, 0.15);
+    border-top: 5px solid red;
+}
+
+nav ul li:hover a{
+    padding: 20px 10px 20px 10px;
+}
+
+.présentation img{
+    width:160px;
+    clip-path:ellipse(50% 50%);
+}
+
+section{
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+.sec{
+    margin: 0px 10%;
+}
+section.présentation div.pré div.left{
+    margin-top: 25px;
+}
+
+.sec::after, .pré::after, .exp::after, .comp::after, .reco::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.left{
+    width: 30%;
+    float: left;
+}
+
+.right{
+    width: 70%;
+    float: left;
+}
+
+.cleft{
+    width: 50%;
+    float: left;
+}
+
+.cright{ 
+    width: 50%;
+    float: left;
+}
+.leftcleft, .rightcright, .leftcright, .rightcright{
+    width: 50%;
+    float: left;
+}
+
+.preco{
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+/* PARTIE EXPÉRIENCES PROFESSIONELLES */
+
+.rose{
+    background-color: rgba(255, 255, 0, 0.15);
+    border-top: 5px solid yellow;
+}
+
+.first{
+    background-color: rgba(255, 0, 242, 0.15);
+    border-top: 5px solid purple;
+}
+
+.digital{
+    background-color: rgba(226, 0, 0, 0.15);
+    border-top: 5px solid rgb(255, 0, 0);
+}
+
+.wenak{
+    background-color: rgba(21, 255, 0, 0.15);
+    border-top: 5px solid rgb(7, 156, 7);
+}
+
+.arduino{
+    background-color: rgba(21, 0, 255, 0.15);
+    border-top: 5px solid rgb(7, 7, 255);
+}
+
+.roseexp::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.roseexp img{
+    width: 100%;
+    max-width: 400px;
+}
+
+.roleft{
+    width: 45%;
+    float: left;
+}
+
+.roright{
+    width: 50%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+
+/* PARTIE LOISIRS */
+
+.gamleft{
+    width: 50%;
+    float: left;
+}
+
+.gamright{
+    width: 45%;
+    float: left;
+}
+
+.gamer img{
+    width: 100%;
+    max-width: 400px;
+}
+
+.gamer{
+    background-color: rgba(0, 60, 255, 0.15);
+    border-top: 5px solid blue;
+}
+
+.sport{
+    background-color: rgba(238, 255, 0, 0.15);
+    border-top: 5px solid rgb(217, 255, 0);
+}
+
+.sport img{
+    width: 100%;
+    max-width: 400px;
+}
+
+.foot{
+    background-color: rgba(0, 255, 34, 0.15);
+    border-top: 5px solid rgb(30, 255, 0);
+}
+
+.foot img{
+    width: 100%;
+    max-width: 400px;
+}
+
+.série{
+    background-color: rgba(255, 0, 0, 0.15);
+    border-top: 5px solid rgb(255, 0, 0);
+}
+
+.série img{
+    width: 100%;
+    max-width: 400px;
+}
+
+.contac{
+    background-color: rgba(255, 0, 0, 0.15);
+    border-top: 5px solid red;
+}
+
+.contacdiv p{
+    font-size: 20px;
+    font-weight: normal;
+    font-family:'Forte', Times New Roman, Times, serif
+}
+
+@media screen and (max-width: 680px){
+    header{
+        height: 80px;
+    }
+    header h1{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    footer{
+        height: 70px;
+    }
+    footer p{
+        padding-top: 15px;
+    }
+    section{
+        margin-bottom: 0px;
+        padding-bottom: 5px;
+    }
+    .sec p{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 30px;
+        padding: 10px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    p{
+        font-size: 15px;
+    }
+    nav ul li a{
+        font-size: 11px;
+        padding: 10px 4px;
+        font-weight: normal;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    nav ul li.menu-acc{
+        float: none;
+    }
+    nav ul li.menu-acc a{
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li:hover a{
+        padding: 10px 4px 10px 4px;
+    }
+    .cleft, .cright{
+        width: 100%;
+    }
+    .preco{
+        padding-top: 0px;
+    }
+    .pré .left, .reco .left, .roleft, .pré .right, .reco .right, .rorigh, .gamleft, .roright, .gamright{
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .contacdiv p{
+        font-size: 16px;
+    }
+}
