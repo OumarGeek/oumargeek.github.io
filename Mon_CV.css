@@ -362,13 +362,14 @@ section.présentation div.pré div.left{
     }
     footer p{
         padding-top: 15px;
+        font-size: 12px;
     }
     section{
         margin-bottom: 0px;
         padding-bottom: 5px;
     }
     .sec p{
-        font-size: 20px;
+        font-size: 16px;
     }
     h1{
         font-size: 30px;
