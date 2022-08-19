@@ -251,6 +251,10 @@ section.présentation div.pré div.left{
     background-color: rgba(226, 0, 0, 0.15);
     border-top: 5px solid rgb(255, 0, 0);
 }
+.hackathon{
+    background-color: rgba(0, 0, 0, 0.15);
+    border-top: 5px solid rgb(0, 0, 0);
+}
 
 .wenak{
     background-color: rgba(21, 255, 0, 0.15);
